@@ -24,7 +24,10 @@ app.use(limiter);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI, {
+  tls: true,
+  tlsAllowInvalidCertificates: false,
+})
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log('DB Error:', err));
 
