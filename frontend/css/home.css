@@ -170,3 +170,29 @@ footer {
   color: #999;
   margin-top: 40px;
 }
+
+.car-images {
+  display: flex;
+  gap: 6px;
+  margin-right: 16px;
+}
+
+.car-images img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+  background: white;
+}
+
+select:focus {
+  outline: none;
+  border-color: #333;
+}

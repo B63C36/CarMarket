@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Details - CarMarket Ireland</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/car.css">
+</head>
+<body>
+
+  <header>
+    <h1>CarMarket Ireland</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="valuate.html">AI Valuation</a>
+    </nav>
+  </header>
+
+  <main>
+    <div style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+      <a href="home.html" class="back-btn">← Back to Listings</a>
+      <div id="car-detail">
+        <p>Loading...</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Full size image">
+  </div>
+
+  <footer>
+    <p>CarMarket Ireland &copy; 2026</p>
+  </footer>
+
+  <script src="js/car.js"></script>
+
+</body>
+</html>

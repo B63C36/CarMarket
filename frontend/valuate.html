@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Car Valuation - CarMarket Ireland</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/valuate.css">
+</head>
+<body>
+
+  <header>
+    <h1>CarMarket Ireland</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="valuate.html">AI Valuation</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="valuate-box">
+      <h3>AI Car Valuation Tool</h3>
+      <p style="margin-bottom: 20px; color: #666; font-size: 14px;">Fill in as much detail as possible for the most accurate estimate.</p>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="make">Make</label>
+          <input type="text" id="make" placeholder="e.g. Toyota">
+        </div>
+        <div class="field">
+          <label for="model">Model</label>
+          <input type="text" id="model" placeholder="e.g. Corolla">
+        </div>
+        <div class="field">
+          <label for="year">Year</label>
+          <input type="number" id="year" placeholder="e.g. 2019">
+        </div>
+        <div class="field">
+          <label for="mileage">Mileage (km)</label>
+          <input type="number" id="mileage" placeholder="e.g. 45000">
+        </div>
+        <div class="field">
+          <label for="fuelType">Fuel Type</label>
+          <select id="fuelType">
+            <option value="">Select</option>
+            <option>Petrol</option>
+            <option>Diesel</option>
+            <option>Electric</option>
+            <option>Hybrid</option>
+            <option>Plug-in Hybrid</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="transmission">Transmission</label>
+          <select id="transmission">
+            <option value="">Select</option>
+            <option>Manual</option>
+            <option>Automatic</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bodyType">Body Type</label>
+          <select id="bodyType">
+            <option value="">Select</option>
+            <option>Hatchback</option>
+            <option>Saloon</option>
+            <option>Estate</option>
+            <option>SUV</option>
+            <option>Coupe</option>
+            <option>Convertible</option>
+            <option>Van</option>
+            <option>Pickup</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="engineSize">Engine Size</label>
+          <input type="text" id="engineSize" placeholder="e.g. 1.4L">
+        </div>
+        <div class="field">
+          <label for="trim">Trim / Edition</label>
+          <input type="text" id="trim" placeholder="e.g. SE, Sport, Luxury">
+        </div>
+        <div class="field">
+          <label for="condition">Condition</label>
+          <select id="condition">
+            <option value="">Select</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Fair</option>
+            <option>Poor</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="colour">Colour</label>
+          <input type="text" id="colour" placeholder="e.g. Silver">
+        </div>
+        <div class="field">
+          <label for="previousOwners">Previous Owners</label>
+          <input type="number" id="previousOwners" placeholder="e.g. 2">
+        </div>
+        <div class="field">
+          <label for="serviceHistory">Service History</label>
+          <select id="serviceHistory">
+            <option value="">Select</option>
+            <option>Full Service History</option>
+            <option>Partial Service History</option>
+            <option>No Service History</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="nct">NCT Status</label>
+          <select id="nct">
+            <option value="">Select</option>
+            <option>Valid NCT</option>
+            <option>NCT Due Soon</option>
+            <option>No NCT</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" placeholder="Any extras, modifications, faults etc..."></textarea>
+        </div>
+      </div>
+
+      <button onclick="valuateCar()">Get AI Estimate</button>
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>CarMarket Ireland &copy; 2026</p>
+  </footer>
+
+  <script src="js/valuate.js"></script>
+
+</body>
+</html>

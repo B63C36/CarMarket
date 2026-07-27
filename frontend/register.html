@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Register - CarMarket Ireland</title>
   <link rel="stylesheet" href="css/home.css">
-  <script src="js/register.js"></script>
+  <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
 
@@ -14,12 +14,14 @@
       <a href="home.html">Home</a>
       <a href="login.html">Login</a>
       <a href="register.html">Register</a>
+      <a href="valuate.html">AI Valuation</a>
     </nav>
   </header>
 
   <main>
-    <section class="post-form" style="max-width: 400px; margin: 40px auto;">
+    <div class="register-box">
       <h3>Create an Account</h3>
+      <br>
       <div class="field">
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Your name">
@@ -38,11 +40,14 @@
       <button onclick="register()">Create Account</button>
       <p id="message"></p>
       <p style="margin-top: 16px; font-size: 13px;">Already have an account? <a href="login.html">Login here</a></p>
-    </section>
+    </div>
   </main>
 
   <footer>
     <p>CarMarket Ireland &copy; 2026</p>
   </footer>
+
+  <script src="js/register.js"></script>
+
 </body>
 </html>

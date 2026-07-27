@@ -1,0 +1,14 @@
+.valuate-box {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 32px;
+  border: 1px solid #ddd;
+}
+
+#result {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
